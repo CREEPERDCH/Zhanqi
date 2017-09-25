@@ -75,6 +75,8 @@ public class SplashActivity extends BaseActivity {
             public void onAnimationEnd(Animation animation) {
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                // todo 下边的Activity跳转动画没有测试
+                overridePendingTransition(R.anim.enter_anim, 0);
                 finish();
             }
 
